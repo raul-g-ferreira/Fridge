@@ -14,13 +14,18 @@ public class FoodController {
     @Autowired
     private FoodService foodService;
 
-
     @GetMapping
-    public List<Food> getAll() {return foodService.getAll();}
+    public List<Food> getAll() {
+        return foodService.getAll();
+    }
 
     @PostMapping
-    public Food create(@RequestBody Food food) {return  foodService.save(food);}
+    public Food create(@RequestBody Food food) {
+        return foodService.save(food);
+    }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id) {foodService.delete(id);}
+    public void delete(@PathVariable Long id) {
+        foodService.delete(id);
+    }
 }

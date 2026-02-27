@@ -31,7 +31,7 @@ public class ClientController {
         clientService.delete(id);
     }
 
-     @PostMapping("/eat/{clientId}/{foodId}")
+    @PostMapping("/eat/{clientId}/{foodId}")
     public void eat(@PathVariable Long clientId, @PathVariable Long foodId) {
         clientService.eat(clientId, foodId);
     }

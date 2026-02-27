@@ -31,7 +31,7 @@ public class ClientService {
     }
 
     public List<Client> getAll() {
-         return clientRepository.findAll();
+        return clientRepository.findAll();
     }
 
     public Client save(Client client) {

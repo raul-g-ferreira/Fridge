@@ -19,7 +19,8 @@ public class Client {
     private Integer age;
     private Integer foodAte;
 
-    public Client() {}
+    public Client() {
+    }
 
     public void eating() {
         this.setFoodAte(this.getFoodAte() + 1);

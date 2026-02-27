@@ -17,10 +17,16 @@ public class FoodService {
     }
 
 
-    public List<Food> getAll() {return foodRepository.findAll();}
+    public List<Food> getAll() {
+        return foodRepository.findAll();
+    }
 
-    public Food save(Food food) {return foodRepository.save(food);}
+    public Food save(Food food) {
+        return foodRepository.save(food);
+    }
 
-    public void delete(Long id) {foodRepository.deleteById(id);}
+    public void delete(Long id) {
+        foodRepository.deleteById(id);
+    }
 
 }
