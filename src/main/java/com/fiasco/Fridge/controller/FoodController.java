@@ -11,13 +11,9 @@ import java.util.List;
 @RequestMapping("/food")
 public class FoodController {
 
+    @Autowired
+    private FoodService foodService;
 
-    private final FoodService foodService;
-
-
-    public FoodController(FoodService foodService) {
-        this.foodService = foodService;
-    }
 
     @GetMapping
     public List<Food> getAll() {return foodService.getAll();}
